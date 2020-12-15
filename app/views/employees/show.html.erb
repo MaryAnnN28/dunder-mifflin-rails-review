@@ -1,0 +1,21 @@
+<font color="light_blue"><h1>Meet <%= @employee.first_name %>!</h1></font>
+
+<img src="<%= @employee.img_url %>" width="300"/>
+<br/>
+<br/>
+
+<font size="5">
+Name: <%= @employee.first_name %> <%= @employee.last_name %><br> 
+Alias: <%= @employee.alias %><br>
+Title: <%= @employee.title %><br>
+Office: <%= @employee.office %><br>
+Dog: <%= @employee.dog.name %> <br>
+</font>
+
+
+
+<br><br>
+<%= link_to "Edit Employee", edit_employee_path %> &nbsp; &nbsp; | &nbsp; &nbsp; <%= link_to "Go to All Employees", employees_path %>
+<%= %>
+
+<%# <div style="float: left"> </div> <div style="float: left"></div> %>

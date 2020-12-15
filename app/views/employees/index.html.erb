@@ -1,0 +1,13 @@
+<h1>Meet our Employees!</h1>
+<ul>
+     <% @employees.each do |employee| %>
+    <h3> <li><%= link_to employee.first_name, employee_path(employee.id) %> </li> </h3>
+
+     <% end %>
+
+</ul>
+<br><br>
+
+&nbsp; <b><%= link_to "Go To All Dogs", dogs_path %></b>
+
+
